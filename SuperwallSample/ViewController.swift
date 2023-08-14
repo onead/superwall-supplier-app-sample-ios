@@ -23,6 +23,11 @@ class ViewController: BaseViewController, UITextFieldDelegate {
     var url: String?
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let infoDict = Bundle.main.infoDictionary
+        let site = infoDict?["site"] as? Int
+        
+        siteSelect.selectedSegmentIndex = site ?? 0
 
         accountTxt.delegate = self
         passwordTxt.delegate = self
@@ -38,9 +43,9 @@ class ViewController: BaseViewController, UITextFieldDelegate {
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        NotificationCenter.default.addObserver(self, selector: #selector(receiveRemoteNotification), name: NSNotification.Name("appReceiveRemoteNotification"), object: nil)
         super.viewWillAppear(animated)
-
+        NotificationCenter.default.addObserver(self, selector: #selector(receiveRemoteNotification), name: NSNotification.Name("appReceiveRemoteNotification"), object: nil)
+       
         let defaults = UserDefaults.standard
         if let _ = defaults.string(forKey: "account") {
             loginView.isHidden = true

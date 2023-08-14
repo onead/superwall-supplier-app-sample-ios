@@ -40,5 +40,7 @@
 	<string>http://localhost:18888</string>
 	<key>stageServerUrl</key>
 	<string>https://stage-trusted2p-superwall-sample-h2tmfznv4q-de.a.run.app</string>
+	<key>site</key>
+	<integer>2</integer>
 </dict>
 </plist>
