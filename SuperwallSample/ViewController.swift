@@ -35,8 +35,7 @@ class ViewController: BaseViewController, UITextFieldDelegate {
         missionBtn.layer.cornerRadius = 10
         missionBtn.layer.masksToBounds = true
         
-        logoutBtn.layer.cornerRadius = 10
-        logoutBtn.layer.masksToBounds = true
+        logoutBtn.backgroundColor = .clear
         
         loginBtn.layer.cornerRadius = 10
         loginBtn.layer.masksToBounds = true
@@ -129,13 +128,20 @@ class ViewController: BaseViewController, UITextFieldDelegate {
     }
     
     @IBAction func onLogout(_ sender: Any) {
-        revokeNotification()
-        loginView.isHidden = false
-        insideView.isHidden = true
-        let defaults = UserDefaults.standard
-        defaults.removeObject(forKey: "account")
-        defaults.removeObject(forKey: "gender")
-        defaults.removeObject(forKey: "birthYear")
+        let alert = UIAlertController(title: "訊息", message: "確定要登出？", preferredStyle: .alert)
+        let okBtn = UIAlertAction(title: "確定", style: .default, handler: { (action: UIAlertAction!) -> Void in
+            self.revokeNotification()
+            self.loginView.isHidden = false
+            self.insideView.isHidden = true
+            let defaults = UserDefaults.standard
+            defaults.removeObject(forKey: "account")
+            defaults.removeObject(forKey: "gender")
+            defaults.removeObject(forKey: "birthYear")
+        })
+        let cancelBtn = UIAlertAction(title: "取消", style: .cancel, handler: nil)
+        alert.addAction(okBtn)
+        alert.addAction(cancelBtn)
+        self.present(alert, animated: true)
     }
     
     func saveAccount(_ account: String) {

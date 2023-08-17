@@ -7,22 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F407E0112A6777FD002E5E53 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F407E0102A6777FD002E5E53 /* bg.png */; };
 		F4534C392A6631B700C84F69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4534C382A6631B700C84F69 /* AppDelegate.swift */; };
 		F4534C3B2A6631B700C84F69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4534C3A2A6631B700C84F69 /* SceneDelegate.swift */; };
 		F4534C3D2A6631B700C84F69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4534C3C2A6631B700C84F69 /* ViewController.swift */; };
 		F4534C402A6631B700C84F69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4534C3E2A6631B700C84F69 /* Main.storyboard */; };
 		F4534C422A6631B800C84F69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4534C412A6631B800C84F69 /* Assets.xcassets */; };
 		F4534C452A6631B800C84F69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4534C432A6631B800C84F69 /* LaunchScreen.storyboard */; };
+		F45D49812A8DF1A40001F3DB /* mission.png in Resources */ = {isa = PBXBuildFile; fileRef = F45D497F2A8DF1A40001F3DB /* mission.png */; };
+		F45D49832A8DF1D80001F3DB /* Close.png in Resources */ = {isa = PBXBuildFile; fileRef = F45D49822A8DF1D80001F3DB /* Close.png */; };
 		F4993AC42A666ECE00C2A3BA /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F4993AC32A666ECE00C2A3BA /* Alamofire */; };
 		F4993AC62A668F2A00C2A3BA /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4993AC52A668F2A00C2A3BA /* WebViewController.swift */; };
 		F4C50C5F2A6F86AE0045B4E9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C50C5E2A6F86AE0045B4E9 /* BaseViewController.swift */; };
-		F4D704CA2A666B4000036E18 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F4D704C92A666B4000036E18 /* logo.png */; };
-		F4DC7F1E2A6A57FB0034AA4E /* Close.png in Resources */ = {isa = PBXBuildFile; fileRef = F4DC7F1D2A6A57FB0034AA4E /* Close.png */; };
+		F4E0751D2A8DDDB7005C9AE7 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F4E0751A2A8DDDB7005C9AE7 /* bg.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F407E0102A6777FD002E5E53 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		F4534C352A6631B700C84F69 /* SuperwallSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperwallSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4534C382A6631B700C84F69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4534C3A2A6631B700C84F69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,11 +30,12 @@
 		F4534C412A6631B800C84F69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4534C442A6631B800C84F69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4534C462A6631B800C84F69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F45D497F2A8DF1A40001F3DB /* mission.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mission.png; sourceTree = "<group>"; };
+		F45D49822A8DF1D80001F3DB /* Close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Close.png; sourceTree = "<group>"; };
 		F4601D412A7343A7003FE0E0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F4993AC52A668F2A00C2A3BA /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		F4C50C5E2A6F86AE0045B4E9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		F4D704C92A666B4000036E18 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
-		F4DC7F1D2A6A57FB0034AA4E /* Close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Close.png; sourceTree = "<group>"; };
+		F4E0751A2A8DDDB7005C9AE7 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,12 +76,12 @@
 				F4534C3C2A6631B700C84F69 /* ViewController.swift */,
 				F4993AC52A668F2A00C2A3BA /* WebViewController.swift */,
 				F4534C3E2A6631B700C84F69 /* Main.storyboard */,
+				F4E0751A2A8DDDB7005C9AE7 /* bg.png */,
+				F45D49822A8DF1D80001F3DB /* Close.png */,
+				F45D497F2A8DF1A40001F3DB /* mission.png */,
 				F4534C412A6631B800C84F69 /* Assets.xcassets */,
 				F4534C432A6631B800C84F69 /* LaunchScreen.storyboard */,
 				F4534C462A6631B800C84F69 /* Info.plist */,
-				F4D704C92A666B4000036E18 /* logo.png */,
-				F407E0102A6777FD002E5E53 /* bg.png */,
-				F4DC7F1D2A6A57FB0034AA4E /* Close.png */,
 			);
 			path = SuperwallSample;
 			sourceTree = "<group>";
@@ -150,11 +150,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F407E0112A6777FD002E5E53 /* bg.png in Resources */,
-				F4D704CA2A666B4000036E18 /* logo.png in Resources */,
+				F45D49812A8DF1A40001F3DB /* mission.png in Resources */,
 				F4534C452A6631B800C84F69 /* LaunchScreen.storyboard in Resources */,
+				F4E0751D2A8DDDB7005C9AE7 /* bg.png in Resources */,
 				F4534C422A6631B800C84F69 /* Assets.xcassets in Resources */,
-				F4DC7F1E2A6A57FB0034AA4E /* Close.png in Resources */,
+				F45D49832A8DF1D80001F3DB /* Close.png in Resources */,
 				F4534C402A6631B700C84F69 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
