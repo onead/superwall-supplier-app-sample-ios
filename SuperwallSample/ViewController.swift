@@ -123,7 +123,8 @@ class ViewController: BaseViewController, UITextFieldDelegate {
         let defaults = UserDefaults.standard
         let gender:String = defaults.string(forKey: "gender") ?? ""
         let birthYear:Int = defaults.integer(forKey: "birthYear")
-        let site = defaults.string(forKey: "site") ?? ""
+        let infoDict = Bundle.main.infoDictionary
+        let site = infoDict?["currentSchemeName"] as? String ?? ""
         infoTxt.text = "\(site) : \(gender) / \(birthYear)"
     }
     
@@ -178,9 +179,8 @@ class ViewController: BaseViewController, UITextFieldDelegate {
         let memberID:String = defaults.string(forKey: "account") ?? ""
         let gender:String = defaults.string(forKey: "gender") ?? "" //一般狀況下不會由app取得性別，此為範例
         let birthYear:Int = defaults.integer(forKey: "birthYear")  //一般狀況下不會由app取得生日，此為範例
-        let site:String = defaults.string(forKey: "site") ?? ""
         let infoDict = Bundle.main.infoDictionary
-        let serverUrl = infoDict?["\(site)ServerUrl"] as? String
+        let serverUrl = infoDict?["serverUrl"] as? String
         let url = "\(serverUrl!)/channel/app/api/getUrl"
         let parameters = ["memberID": memberID, "gender": gender, "birthYear": birthYear] as [String : Any]
         showLoading(true)
@@ -239,9 +239,8 @@ class ViewController: BaseViewController, UITextFieldDelegate {
         let memberID:String = defaults.string(forKey: "account") ?? ""
         let pushToken:String = defaults.string(forKey: "pushToken") ?? ""
         let deviceID:String = UIDevice.current.identifierForVendor!.uuidString
-        let site:String = defaults.string(forKey: "site") ?? ""
         let infoDict = Bundle.main.infoDictionary
-        let serverUrl = infoDict?["\(site)ServerUrl"] as? String
+        let serverUrl = infoDict?["serverUrl"] as? String
         let url = "\(serverUrl!)/channel/app/api/registerNotification"
         let parameters = ["memberID": memberID, "deviceID": deviceID, "pushToken": pushToken, "os": "iOS"] as [String : Any]
         
@@ -278,9 +277,8 @@ class ViewController: BaseViewController, UITextFieldDelegate {
     func revokeNotification() {
         let defaults = UserDefaults.standard
         let deviceID:String = UIDevice.current.identifierForVendor!.uuidString
-        let site:String = defaults.string(forKey: "site") ?? ""
         let infoDict = Bundle.main.infoDictionary
-        let serverUrl = infoDict?["\(site)ServerUrl"] as? String
+        let serverUrl = infoDict?["serverUrl"] as? String
         let url = "\(serverUrl!)/channel/app/api/revokeNotification"
         let parameters = ["deviceID": deviceID, "os": "iOS"] as [String : Any]
         defaults.removeObject(forKey: "pushToken")

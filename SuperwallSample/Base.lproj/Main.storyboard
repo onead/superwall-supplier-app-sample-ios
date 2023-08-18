@@ -17,59 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pYn-2Y-U8K" userLabel="loginView">
-                                <rect key="frame" x="0.0" y="59" width="393" height="749"/>
-                                <subviews>
-                                    <segmentedControl hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="Kio-iE-N7f">
-                                        <rect key="frame" x="37" y="49" width="318" height="32"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <segments>
-                                            <segment title="Dev"/>
-                                            <segment title="Demo"/>
-                                            <segment title="Stage"/>
-                                            <segment title="Local"/>
-                                        </segments>
-                                        <color key="selectedSegmentTintColor" red="0.94123083350000003" green="0.58036488289999999" blue="0.2118587196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </segmentedControl>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="請輸入帳號：手機" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hJf-1d-654">
-                                        <rect key="frame" x="37" y="99" width="318" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEp-W0-Flj">
-                                        <rect key="frame" x="152" y="221" width="88" height="34"/>
-                                        <color key="backgroundColor" red="0.94117647059999998" green="0.58039215690000001" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="登入"/>
-                                        <connections>
-                                            <action selector="onLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fma-mB-76f"/>
-                                        </connections>
-                                    </button>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="請輸入密碼：1234" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PFA-6x-HQd">
-                                        <rect key="frame" x="37" y="154" width="318" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                    </textField>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="xEp-W0-Flj" secondAttribute="trailing" constant="153" id="0lx-z5-8Xh"/>
-                                    <constraint firstItem="hJf-1d-654" firstAttribute="top" secondItem="pYn-2Y-U8K" secondAttribute="top" constant="99" id="1Op-t7-80m"/>
-                                    <constraint firstItem="xEp-W0-Flj" firstAttribute="height" secondItem="pYn-2Y-U8K" secondAttribute="height" multiplier="0.0453939" id="1ra-oq-DoQ"/>
-                                    <constraint firstItem="hJf-1d-654" firstAttribute="leading" secondItem="pYn-2Y-U8K" secondAttribute="leading" constant="37" id="5bP-Sk-4CC"/>
-                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="hJf-1d-654" secondAttribute="trailing" constant="38" id="BQ4-a4-qkH"/>
-                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Kio-iE-N7f" secondAttribute="trailing" constant="38" id="Be7-eD-lGP"/>
-                                    <constraint firstItem="PFA-6x-HQd" firstAttribute="top" secondItem="pYn-2Y-U8K" secondAttribute="top" constant="154" id="CpA-tm-6jj"/>
-                                    <constraint firstItem="xEp-W0-Flj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="pYn-2Y-U8K" secondAttribute="leading" constant="20" symbolic="YES" id="Dl5-Hp-Ipi"/>
-                                    <constraint firstItem="xEp-W0-Flj" firstAttribute="width" secondItem="pYn-2Y-U8K" secondAttribute="width" multiplier="0.223919" id="K3N-EY-I5e"/>
-                                    <constraint firstItem="PFA-6x-HQd" firstAttribute="leading" secondItem="pYn-2Y-U8K" secondAttribute="leading" constant="37" id="NjR-uu-qRp"/>
-                                    <constraint firstItem="Kio-iE-N7f" firstAttribute="top" secondItem="pYn-2Y-U8K" secondAttribute="top" constant="49" id="PQS-ad-ttu"/>
-                                    <constraint firstItem="Kio-iE-N7f" firstAttribute="leading" secondItem="pYn-2Y-U8K" secondAttribute="leading" constant="37" id="Rgc-Rf-EfD"/>
-                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="PFA-6x-HQd" secondAttribute="trailing" constant="38" id="jGL-Ex-EoU"/>
-                                    <constraint firstItem="xEp-W0-Flj" firstAttribute="top" secondItem="pYn-2Y-U8K" secondAttribute="top" constant="221" id="rIn-th-uOy"/>
-                                </constraints>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T08-Tj-99w" userLabel="insideView">
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <subviews>
@@ -123,6 +70,59 @@
                                     <constraint firstItem="D6T-in-6Z6" firstAttribute="leading" secondItem="CXa-zx-ieG" secondAttribute="trailing" constant="161" id="p7u-Hp-015"/>
                                     <constraint firstItem="obi-VO-VHO" firstAttribute="leading" relation="lessThanOrEqual" secondItem="T08-Tj-99w" secondAttribute="leading" constant="70" id="ru1-yi-5zi"/>
                                     <constraint firstAttribute="trailing" secondItem="obi-VO-VHO" secondAttribute="trailing" id="y1V-Gm-XoP"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pYn-2Y-U8K" userLabel="loginView">
+                                <rect key="frame" x="0.0" y="59" width="393" height="749"/>
+                                <subviews>
+                                    <segmentedControl hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="Kio-iE-N7f">
+                                        <rect key="frame" x="37" y="49" width="318" height="32"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <segments>
+                                            <segment title="Dev"/>
+                                            <segment title="Demo"/>
+                                            <segment title="Stage"/>
+                                            <segment title="Local"/>
+                                        </segments>
+                                        <color key="selectedSegmentTintColor" red="0.94123083350000003" green="0.58036488289999999" blue="0.2118587196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </segmentedControl>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="請輸入帳號：手機" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hJf-1d-654">
+                                        <rect key="frame" x="37" y="99" width="318" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEp-W0-Flj">
+                                        <rect key="frame" x="152" y="221" width="88" height="34"/>
+                                        <color key="backgroundColor" red="0.94117647059999998" green="0.58039215690000001" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="登入"/>
+                                        <connections>
+                                            <action selector="onLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fma-mB-76f"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="請輸入密碼：1234" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PFA-6x-HQd">
+                                        <rect key="frame" x="37" y="154" width="318" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="xEp-W0-Flj" secondAttribute="trailing" constant="153" id="0lx-z5-8Xh"/>
+                                    <constraint firstItem="hJf-1d-654" firstAttribute="top" secondItem="pYn-2Y-U8K" secondAttribute="top" constant="99" id="1Op-t7-80m"/>
+                                    <constraint firstItem="xEp-W0-Flj" firstAttribute="height" secondItem="pYn-2Y-U8K" secondAttribute="height" multiplier="0.0453939" id="1ra-oq-DoQ"/>
+                                    <constraint firstItem="hJf-1d-654" firstAttribute="leading" secondItem="pYn-2Y-U8K" secondAttribute="leading" constant="37" id="5bP-Sk-4CC"/>
+                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="hJf-1d-654" secondAttribute="trailing" constant="38" id="BQ4-a4-qkH"/>
+                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Kio-iE-N7f" secondAttribute="trailing" constant="38" id="Be7-eD-lGP"/>
+                                    <constraint firstItem="PFA-6x-HQd" firstAttribute="top" secondItem="pYn-2Y-U8K" secondAttribute="top" constant="154" id="CpA-tm-6jj"/>
+                                    <constraint firstItem="xEp-W0-Flj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="pYn-2Y-U8K" secondAttribute="leading" constant="20" symbolic="YES" id="Dl5-Hp-Ipi"/>
+                                    <constraint firstItem="xEp-W0-Flj" firstAttribute="width" secondItem="pYn-2Y-U8K" secondAttribute="width" multiplier="0.223919" id="K3N-EY-I5e"/>
+                                    <constraint firstItem="PFA-6x-HQd" firstAttribute="leading" secondItem="pYn-2Y-U8K" secondAttribute="leading" constant="37" id="NjR-uu-qRp"/>
+                                    <constraint firstItem="Kio-iE-N7f" firstAttribute="top" secondItem="pYn-2Y-U8K" secondAttribute="top" constant="49" id="PQS-ad-ttu"/>
+                                    <constraint firstItem="Kio-iE-N7f" firstAttribute="leading" secondItem="pYn-2Y-U8K" secondAttribute="leading" constant="37" id="Rgc-Rf-EfD"/>
+                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="PFA-6x-HQd" secondAttribute="trailing" constant="38" id="jGL-Ex-EoU"/>
+                                    <constraint firstItem="xEp-W0-Flj" firstAttribute="top" secondItem="pYn-2Y-U8K" secondAttribute="top" constant="221" id="rIn-th-uOy"/>
                                 </constraints>
                             </view>
                         </subviews>

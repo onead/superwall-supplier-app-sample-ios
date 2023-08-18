@@ -32,15 +32,9 @@
 			</array>
 		</dict>
 	</dict>
-	<key>demoServerUrl</key>
-	<string>https://demo-trusted2p-superwall-sample-h2tmfznv4q-de.a.run.app</string>
-	<key>devServerUrl</key>
-	<string>https://dev-trusted2p-superwall-sample-h2tmfznv4q-de.a.run.app</string>
-	<key>localServerUrl</key>
-	<string>http://localhost:18888</string>
-	<key>stageServerUrl</key>
-	<string>https://stage-trusted2p-superwall-sample-h2tmfznv4q-de.a.run.app</string>
-	<key>site</key>
-	<integer>2</integer>
+	<key>serverUrl</key>
+	<string>${SERVER_URL}</string>
+	<key>currentSchemeName</key>
+	<string>${CURRENT_SCHEME_NAME}</string>
 </dict>
 </plist>
