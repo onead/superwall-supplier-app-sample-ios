@@ -13,7 +13,6 @@ class ViewController: BaseViewController, UITextFieldDelegate {
     @IBOutlet weak var loginView: UIView!
     @IBOutlet weak var accountTxt: UITextField!
     @IBOutlet weak var passwordTxt: UITextField!
-    @IBOutlet weak var siteSelect: UISegmentedControl!
     @IBOutlet weak var loginBtn: UIButton!
     
     @IBOutlet weak var insideView: UIView!
@@ -24,11 +23,6 @@ class ViewController: BaseViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let infoDict = Bundle.main.infoDictionary
-        let site = infoDict?["site"] as? Int
-        
-        siteSelect.selectedSegmentIndex = site ?? 0
-
         accountTxt.delegate = self
         passwordTxt.delegate = self
         
@@ -156,19 +150,6 @@ class ViewController: BaseViewController, UITextFieldDelegate {
         // random generate number 1950 ~ 2005
         let birthYear: Int = Int.random(in: 1950...2005)
         defaults.set(birthYear, forKey: "birthYear")
-        
-        switch siteSelect.selectedSegmentIndex {
-        case 0:
-            defaults.set("dev", forKey: "site")
-        case 1:
-            defaults.set("demo", forKey: "site")
-        case 2:
-            defaults.set("stage", forKey: "site")
-        case 3:
-            defaults.set("local", forKey: "site")
-        default:
-            print("no select site")
-        }
     }
 
     // Call 自家伺服器 API 取得任務牆網址
