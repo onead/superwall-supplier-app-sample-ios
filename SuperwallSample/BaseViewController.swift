@@ -43,7 +43,6 @@ class BaseViewController: UIViewController {
             let defaults = UserDefaults.standard
             let userID = defaults.string(forKey: "account")
             let token = sceneDelegate?.token
-            let site:String = defaults.string(forKey: "site") ?? ""
             sceneDelegate?.token = nil
             
             if userID == nil {
@@ -59,7 +58,7 @@ class BaseViewController: UIViewController {
             print("doaction binding")
             // get value of custom property from Info.plist
             let infoDict = Bundle.main.infoDictionary
-            let serverUrl = infoDict?["\(site)ServerUrl"] as? String
+            let serverUrl = infoDict?["serverUrl"] as? String
             let url = "\(serverUrl!)/channel/app/api/bind"
             let parameters = ["token": token!, "userID": userID!]
             showLoading(true)
