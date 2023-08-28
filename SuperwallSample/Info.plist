@@ -41,7 +41,5 @@
 	<string>${CURRENT_SCHEME_NAME}</string>
 	<key>serverUrl</key>
 	<string>${SERVER_URL}</string>
-	<key>UIUserInterfaceStyle</key>
-	<string>Light</string>
 </dict>
 </plist>
