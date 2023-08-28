@@ -99,18 +99,16 @@ class ViewController: BaseViewController, UITextFieldDelegate {
 
         showLoading(true)
         // delay 1.5 sec
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-            self.showLoading(false)
-            self.saveAccount(account!)
-            self.loginView.isHidden = true
-            self.insideView.isHidden = false
-            self.showInfo()
-            self.askNotificationPermission()
-        }
+        self.showLoading(false)
+        self.saveAccount(account!)
+        self.loginView.isHidden = true
+        self.insideView.isHidden = false
+        self.showInfo()
+        self.askNotificationPermission()
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
-            self.getUrl()
-        }
+        //DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+        self.getUrl()
+        //}
     }
     
     func showInfo() {
